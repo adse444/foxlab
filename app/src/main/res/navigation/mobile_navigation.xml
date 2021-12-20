@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_chat">
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.foxlab.ui.chat.ChatFragment"
+        android:label="Живой чат"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_MessageFragment"
+            app:destination="@id/MessageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MessageFragment"
+        android:name="com.example.foxlab.ui.chat.MessageFragment"
+        android:label="Отправить сообщение"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_MessageFragment_to_chatFragment"
+            app:destination="@id/navigation_chat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="com.example.foxlab.ui.quiz.QuizFragment"
+        android:label="Викторина"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_navigation_quiz_to_question"
+            app:destination="@id/question" />
+    </fragment>
+    <fragment
+        android:id="@+id/question"
+        android:name="com.example.foxlab.ui.quiz.Question"
+        android:label="Вопросы"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_question_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.foxlab.ui.quiz.ResultFragment"
+        android:label="Результаты викторины">
+
+
+    </fragment>
+
+</navigation>

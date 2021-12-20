@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">foxlab</string>
+    <string name="title_chat">Живой чат</string>
+    <string name="title_Message">Ваше сообщение</string>
+    <string name="title_quiz">Викторина</string>
+    <string name="title_Next">Продолжить</string>
+    <string name="sent_Message">Отправить сообщение</string>
+    <string name="start_Game">Начать игру</string>
+    <string name="win">Константин Константинович, поздравляем!</string>
+    <string name="quiz_Result">Вы ответили на</string>
+    <string name="quiz_Result2">Можно сказать, что вы хорошо знаете нашу компанию</string>
+    <string name="desc_Quiz">Предлагаем вам сыграть в нашу юбилейную викторину, ответьте на десять вопросов о лисах и станьте победителем</string>
+</resources>
